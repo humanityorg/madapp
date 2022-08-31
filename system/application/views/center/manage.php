@@ -100,9 +100,6 @@ echo form_close();
 <!-- <br /><br />
 <?php if($this->user_auth->get_permission('center_delete')) { ?><a href="<?php echo site_url("center/deletecenter/".$center_id); ?>" class="confirm delete with-icon">Delete <?php echo $center_name ?> Center</a><?php } ?> -->
 
-<?php if($this->user_auth->get_permission('shelter_comments')) { // :PERMISSION_RESET: ?>
-<iframe src="<?php echo MAD_APPS_FOLDER ?>comments/?item=Center&amp;item_id=<?php echo $center_id ?>&amp;layout=0" style="width:100%;" height="400" title="Comments"></iframe>
-<?php } ?>
 </div>
 
 <?php
